@@ -7,12 +7,12 @@ let win
 function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({
-    width: 700,
+    width: 380,
     height: 510,
     webPreferences: {
       nodeIntegration: true
     },
-    //resizable : false,
+    sresizable : false,
     titleBarStyle : 'hidden'
   })
 
@@ -26,7 +26,7 @@ function createWindow () {
     // when you should delete the corresponding element.
     win = null
   })
-  win.webContents.openDevTools();
+  //win.webContents.openDevTools();
 }
 
 // This method will be called when Electron has finished
