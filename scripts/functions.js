@@ -8,7 +8,7 @@ var xo = [];
 function selectBox(box){
   var e = $("#"+box);
   var value = boxArray.indexOf(box);
-  if(!e.hasClass("marked-com")){
+  if(!e.hasClass("marked-com") && !e.hasClass("marked-user")){
     e.addClass("marked-user");
     marked.splice(marked.indexOf(value),1);
     xo.mark(value,'user');
@@ -29,11 +29,11 @@ function selectBox(box){
 function compSelectBox(){
   var toMark = Math.floor(Math.random() * marked.length);
   var e = $("#"+boxArray[marked[toMark]]);
-  if(!e.hasClass("marked-user")){
+  if(!e.hasClass("marked-com") && !e.hasClass("marked-user")){
     $("#main").html("Thinking...");
     setTimeout(function(){
       $("#main").html("Tic Tac Toe");
-    },250);
+    },100);
     e.addClass("marked-com");
     xo.mark(marked[toMark],'com');
     if(checkVictory('com',marked[toMark]))
