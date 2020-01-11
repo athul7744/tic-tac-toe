@@ -1,16 +1,28 @@
-table, tr, td{
-  border: 1px solid black;
+table, tr, td {
+  border: 2px solid black;
   border-collapse: collapse;
 }
- #ttt td {
-   width : 120px;
-   height : 120px;
- }
 
- .marked-user {
-   background-color: red;
- }
+table {
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+#ttt td {
+  width : 120px;
+  height : 120px;
+}
+
+.marked-user {
+  background-image: url(../images/x.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 95px;
+}
 
 .marked-com {
-  background-color: grey;
+  background-image: url(../images/o.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110px;
 }
