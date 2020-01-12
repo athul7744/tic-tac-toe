@@ -41,7 +41,7 @@ function TicTacToe(){
       self.xo.mark(self.marked[toMark],'com');
       if(self.checkVictory('com',self.marked[toMark]))
       {
-        showMessage(false);
+        self.showMessage(false);
       }
       self.marked.splice(toMark,1);
     }
