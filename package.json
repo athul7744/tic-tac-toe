@@ -1,5 +1,5 @@
 {
-  "name": "Tic-Tac-Toe",
+  "name": "tic-tac-toe",
   "version": "1.7.2",
   "description": "A basic tic-tac-toe game",
   "main": "main.js",
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/athul7744/tic-tac-toe#readme",
   "devDependencies": {
-    "electron": "^6.0.2",
+    "electron": "^8.2.3",
     "electron-builder": "^22.5.1"
   },
   "dependencies": {
