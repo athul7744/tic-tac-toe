@@ -18,7 +18,7 @@
     "tac",
     "toe"
   ],
-  "author": "Athul Anil Kumar",
+  "author": "Athul Anil Kumar <athul7744@outlook.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/athul7744/tic-tac-toe/issues"
@@ -52,9 +52,9 @@
     },
     "linux": {
       "target": [
-        "AppImage",
-        "deb"
-      ]
+        "AppImage"
+      ],
+      "icon": "build/icon.png"
     },
     "win": {
       "target": "NSIS",
